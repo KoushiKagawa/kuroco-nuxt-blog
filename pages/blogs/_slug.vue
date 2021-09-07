@@ -1,0 +1,64 @@
+<template>
+    <div>
+        <Nav /> 
+        <main>
+            <div class="max-w-3xl mx-auto px-4 sm:px-6 xl:max-w-3xl xl:px-0 m-4">  
+                <h1 class="text-3xl font-extrabold text-gray-900 tracking-tight sm:text-4xl md:text-[4rem] md:leading-[3.5rem] leading-10">{{ response.details.subject }}</h1>
+                <img class="object-cover w-full h-full my-4" :src="response.details.ext_col_01.url">
+                <div class="content" v-html="response.details.contents"></div>
+            </div>
+        </main>
+    </div>
+</template>
+
+<script>
+export default {
+    async asyncData ({ $axios, params }) {
+        try {
+            const response = await $axios.$get(process.env.ROOT_API_URL + '/rcms-api/1/enblogdetail/' + `${params.slug}`)
+            console.log(response);
+            return { response }
+        }catch (e) {
+            console.log(e.message)
+        }
+    }
+}
+</script>
+
+<style>
+
+
+@layer base {
+    
+}
+
+/*
+@layer components {
+    h2 {
+        @apply text-3xl;
+    }
+    h3 {
+        @apply text-2xl;
+    }
+    h4 {
+        @apply text-xl;
+    }
+    .markdown {
+        @apply my-4;
+        
+    }
+    p {
+        @apply leading-relaxed text-lg;
+    }
+    a {
+        @apply underline;
+    }
+    ul {
+        @apply m-3;
+    }
+    li {
+        @apply list-disc;
+    }
+}
+*/
+</style>
