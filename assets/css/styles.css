@@ -9,10 +9,10 @@
   @apply text-3xl my-8;
 }
 .content h3 {
-  @apply text-2xl;
+  @apply text-2xl my-6;
 }
 .content h4 {
-  @apply text-xl;
+  @apply text-xl my-4;
 }
 .content {
   @apply my-4;
@@ -30,5 +30,5 @@
   @apply list-disc;
 }
 .content img {
-  @apply my-8;
+  @apply my-8 rounded-md;
 }

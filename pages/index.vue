@@ -22,7 +22,7 @@
                   <time datetime="2021-08-11T19:30:00.000Z">{{ n.ymd }}</time>
                   <img
                     v-if="n.ext_col_01.url"
-                    class="h-48 xxlmin:w-1/2 xxlmax:w-full object-cover"
+                    class="h-48 xxlmin:w-1/2 xxlmax:w-full object-cover rounded-md"
                     :src="n.ext_col_01.url"
                   />
                 </dd>
