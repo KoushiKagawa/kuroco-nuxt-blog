@@ -2,16 +2,16 @@
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
 
-main h1 {
+.content h1 {
   @apply my-10;
 }
-h2 {
+.content h2 {
   @apply text-3xl my-8;
 }
-h3 {
+.content h3 {
   @apply text-2xl;
 }
-h4 {
+.content h4 {
   @apply text-xl;
 }
 .content {
