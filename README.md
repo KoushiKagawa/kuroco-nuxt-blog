@@ -1,5 +1,7 @@
 # nuxt-blog
 
+create own blog
+
 ## Build Setup
 
 ```bash
