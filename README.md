@@ -1,6 +1,6 @@
 # nuxt-blog
 
-create blog
+create own blog
 
 ## Build Setup
 
