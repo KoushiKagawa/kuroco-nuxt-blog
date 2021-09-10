@@ -1,5 +1,5 @@
 require('dotenv').config();
-const { ROOT_API_URL } = process.env;
+const { ROOT_MNG_URL } = process.env;
 
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
@@ -47,6 +47,6 @@ export default {
   build: {
   },
   env: {
-    ROOT_API_URL
+    ROOT_MNG_URL
   }
 }
